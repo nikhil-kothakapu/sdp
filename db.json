@@ -1,0 +1,94 @@
+{
+  "student": [
+    {
+      "name": "Nikhil Reddy",
+      "rollnumber": 0,
+      "gender": "male",
+      "doj": "2023-04-25T07:00:00.000Z",
+      "course": "MPC",
+      "email": "nikhilkers@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "sunil",
+      "rollnumber": 2,
+      "gender": "male",
+      "doj": "2023-04-19T07:00:00.000Z",
+      "course": "ECE",
+      "email": "sunil@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Nikhil",
+      "rollnumber": 3,
+      "gender": "male",
+      "doj": "2023-04-25T07:00:00.000Z",
+      "course": "MPC",
+      "email": "nikhilkers@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Raman",
+      "rollnumber": 4,
+      "gender": "male",
+      "doj": "2023-04-05T07:00:00.000Z",
+      "course": "ECE",
+      "email": "aswx@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "sghgs",
+      "rollnumber": 2,
+      "gender": "male",
+      "doj": "2023-04-18T07:00:00.000Z",
+      "course": "MPC",
+      "email": "sghg",
+      "id": 5
+    },
+    {
+      "name": "sgg",
+      "rollnumber": 2,
+      "gender": "male",
+      "doj": "2023-04-25T07:00:00.000Z",
+      "course": "MPC",
+      "email": "sghrh",
+      "id": 6
+    },
+    {
+      "name": "shdhfr",
+      "rollnumber": 3,
+      "gender": "male",
+      "doj": "2023-04-26T07:00:00.000Z",
+      "course": "ECE",
+      "email": "nikhilkers@gmail.com",
+      "id": 7
+    },
+    {
+      "name": "dgdsg",
+      "rollnumber": 4,
+      "gender": "male",
+      "doj": "2023-04-20T07:00:00.000Z",
+      "course": "MPC",
+      "email": "dsgsdgdsg",
+      "id": 8
+    },
+    {
+      "name": "bfzhdfh",
+      "rollnumber": 4,
+      "gender": "female",
+      "doj": "2023-04-27T07:00:00.000Z",
+      "course": "ECE",
+      "email": "fshdhdz",
+      "id": 9
+    },
+    {
+      "name": "fdhdfh",
+      "rollnumber": 1,
+      "gender": "female",
+      "doj": "2023-04-12T07:00:00.000Z",
+      "course": "ECE",
+      "email": "fgfdg",
+      "id": 10
+    }
+  ]
+}

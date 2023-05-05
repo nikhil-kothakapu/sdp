@@ -1,0 +1,21 @@
+<mat-toolbar>
+   <span class="title"><mat-icon >assignment_ind</mat-icon>SDP</span>
+   <span class="example-spacer"></span>
+   <a  [matMenuTriggerFor]="menu">
+    <span class="material-symbols-outlined title">widgets</span>
+   </a>
+   <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon class="icon-menu"><span class="material-icons-outlined">
+        settings
+        </span></mat-icon>Settings
+    </button>
+    <button mat-menu-item >
+      <mat-icon><span class="material-icons-outlined">
+        account_circle
+        </span></mat-icon>Account
+    </button>
+    
+  </mat-menu>
+
+ </mat-toolbar>

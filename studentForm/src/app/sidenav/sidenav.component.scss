@@ -1,0 +1,38 @@
+mat-sidenav{
+    margin:16px;
+    width:200px;
+    border-right: none;
+    background-color:rgb(238, 215, 182);
+}
+
+
+
+
+
+mat-sidenav-content{
+    height:calc(100vh - 65px);
+    
+}
+
+
+
+.options-list-names{
+    font-weight: bold;
+}
+
+.active{
+    background-color: white;
+}
+
+mat-icon{
+    margin: 10px 8px 0px;
+    height:20px;
+}
+
+
+.router-outlet{
+    height:calc(100vh - 98px);
+    margin:16px;
+    margin-left: 32px;
+}
+

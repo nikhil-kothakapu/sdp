@@ -1,0 +1,62 @@
+<div mat-dialog-title>
+    <h1>Student Add or Edit Form</h1>
+</div>
+<form [formGroup]="empform" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="form-cont">
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput formControlName="name">
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Roll Number</mat-label>
+                <input matInput placeholder="1" type="number" formControlName="rollnumber">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-radio-group aria-label="Select an option" formControlName="gender">
+                <mat-label>Gender</mat-label>
+                <mat-radio-button value="male">Male</mat-radio-button>
+                <mat-radio-button value="female">Female</mat-radio-button>
+            </mat-radio-group>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Date of Joining</mat-label>
+                <input matInput [matDatepicker]="picker" formControlName="doj">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Course</mat-label>
+                <mat-select formControlName="course">
+                    <mat-option *ngFor="let course of courses" [value]="course">
+                        {{course}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+           
+        
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" formControlName="email">
+            </mat-form-field>
+        </div>
+        
+    </div>
+
+
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Add'}}</button>
+    </div>
+</form>

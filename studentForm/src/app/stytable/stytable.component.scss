@@ -1,0 +1,47 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.tool-bar{
+  background-color:skyblue;
+}
+
+.table-cont{
+  max-width:1200px;
+  margin:0 auto;
+  mat-form-field{
+    width:100%;
+  }
+}
+mat-toolbar{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+//////////////////////////////////////////////////
+.id-col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .spinnerd{
+    position: absolute;
+    z-index: 2;
+  }
+  .idd{
+    position: absolute;
+    z-index: 1;
+  }
+}
+/////////////////////////////////////////////////////
+
+
+.pin{
+  padding-left: 0px;
+}
+.filt-ref{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0px 15px 0px 15px;
+}
