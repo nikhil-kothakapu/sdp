@@ -9,7 +9,7 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./add-oredit.component.scss']
 })
 export class AddOREditComponent implements OnInit {
-      courses :String[]=['MPC','ECE'];
+      courses :String[]=['Batsmen','Bowler','All-rounder'];
       empform:FormGroup;
 
       constructor(private formbuild:FormBuilder,private _studentService:StudentService,
@@ -17,7 +17,7 @@ export class AddOREditComponent implements OnInit {
                     @Inject(MAT_DIALOG_DATA)public data:any){
 
                   this.empform=this.formbuild.group({
-                    name:'',rollnumber:'',gender:'',doj:'',course:'',email:''
+                    name:'',jersey_number:'',gender:'',doj:'',player_roll:'',email:''
                   })
 
                   }

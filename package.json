@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@angular/cdk": "^15.2.8",
+    "@angular/flex-layout": "^15.0.0-beta.42",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.2",
+    "chart.js": "^4.3.0",
+    "chartjs-plugin-datalabels": "^2.2.0"
+  }
+}

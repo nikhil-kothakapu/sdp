@@ -11,8 +11,8 @@
             </mat-form-field>
 
             <mat-form-field appearance="outline">
-                <mat-label>Roll Number</mat-label>
-                <input matInput placeholder="1" type="number" formControlName="rollnumber">
+                <mat-label>Jersey Number</mat-label>
+                <input matInput placeholder="1" type="number" formControlName="jersey_number">
             </mat-form-field>
         </div>
 
@@ -34,8 +34,8 @@
             </mat-form-field>
 
             <mat-form-field appearance="outline">
-                <mat-label>Course</mat-label>
-                <mat-select formControlName="course">
+                <mat-label>Player-Roll</mat-label>
+                <mat-select formControlName="player_roll">
                     <mat-option *ngFor="let course of courses" [value]="course">
                         {{course}}
                     </mat-option>

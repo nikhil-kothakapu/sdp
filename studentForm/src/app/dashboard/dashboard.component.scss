@@ -1,6 +1,36 @@
 .dashboard{
-    height:calc(100vh - 98px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .charts{
+        display: flex;
+        flex-direction: row;
+        height:calc(100vh - 98px);
+        .pie-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 300px;
+            
+            max-height: 300px;
+        }
+        
+    }
+    
+    
+}
+
+.pie{
+    padding:10px;
+    height:250px;
+}
+
+.bar{
+    padding:10px;
+    height:250px;
+    display:flex ;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content:end ;
+   
+    
+    
 }

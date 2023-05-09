@@ -4,7 +4,6 @@ import { MatDialog } from '@angular/material/dialog';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
-import { Subscription } from 'rxjs';
 import { StudentService } from '../services/student.service';
 import { AddOREditComponent } from '../add-oredit/add-oredit.component';
 import {MatSnackBar} from '@angular/material/snack-bar';
@@ -13,13 +12,13 @@ import { TudComponent } from './tud/tud.component';
 @Component({
   selector: 'app-stytable',
   templateUrl: './stytable.component.html',
-  styleUrls: ['./stytable.component.scss']
+  styleUrls: ['./stytable.component.scss'],
+  
 })
 export class StytableComponent implements OnInit,OnDestroy {
   title = 'studentForm';
-  displayedColumns: string[] = ['id', 'name', 'gender', 'doj','course','rollnumber','email','action'];
+  displayedColumns: string[] = ['id', 'name', 'gender', 'doj','player-roll','jersey-number','email','action'];
   dataSource!: MatTableDataSource<any>;
-  mediasub: Subscription = new Subscription;
   public done=false;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -56,7 +55,7 @@ export class StytableComponent implements OnInit,OnDestroy {
        this.dataSource.sort=this.sort;
        this.dataSource.paginator=this.paginator;
        this.done=false;
-       this.saveTodos();
+       this.spinner();
        
       },
       error:console.log
@@ -101,11 +100,11 @@ export class StytableComponent implements OnInit,OnDestroy {
     
   }
 
-  saveTodos(): void {
+  spinner(): void {
     setTimeout(() => {
         this.done = true;
         this.snackBar.open("Table Data Updated","close",{duration:10000});
-        this._matdilouge.open(TudComponent);
+        
     }, 5000);
    }
   
